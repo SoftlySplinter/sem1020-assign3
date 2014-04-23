@@ -1,4 +1,4 @@
-\documentclass[a3,portrait]{template/a0poster}
+\documentclass[a4,portrait]{template/a0poster}
 
 \usepackage{multicol} % This is so we can have multiple columns of text side-by-side
 \columnsep=100pt % This is the amount of white space between the columns in the poster
@@ -13,7 +13,7 @@
 \begin{document}
 
 \begin{minipage}[b]{\linewidth}
-\veryHuge \color{NavyBlue} \textbf{Can we date an artist's work from catalogue photographs?}
+\VeryHuge \color{NavyBlue} \textbf{Can we date an artist's work from catalogue photographs?}
 \color{Black}\\ % Title
 \huge \textbf{Alexander D. Brown}, Gareth L. Roderick, Hannah M. Dee, Lorna M.
 Hughes\\[0.5cm] % Author(s)
@@ -23,7 +23,8 @@ Hughes\\[0.5cm] % Author(s)
 
 \begin{multicols}{2}
 
-\begin{abstract}
+\Large
+\section*{Abstract}
 Computer vision has addressed many problems in art, but has not yet looked in
 detail at the way artistic style can develop and evolve over the course of an
 artist's career. In this paper we take a computational approach to modelling
@@ -36,16 +37,33 @@ year, and we are able to guess the age of the painting within 15 years, for
 around 70\% of our dataset. We also investigate the incorporation of expert
 knowledge within this framework by considering a subset of paintings chosen as
 exemplars by a scholar familiar with Williams' work.
-\end{abstract}
+
+\section*{Background}
 
 \section*{Introduction}
 
-\end{multicols}
+\section*{The Image Dataset}
+Our image dataset consisted of 325 paintings, including associated metadata for
+each painting. This metadata includes title; year or year range, for those
+works which the actual date is unknown but can be reasonably estimated by
+curators; genre; original painting size; painting material and image size.
 
-\newpage
+Because many of these images were collected from catalogue photographs there
+was no control over the lighting conditions in which they were captured nor the
+resolution of these images.
 
-\begin{multicols}{2}
 \section*{Methodology}
+
+\section*{Colour Features}
+
+\section*{Texture Features}
+
+\section*{Year Classification Results}
+
+\section*{Exemplars}
+
+\section*{Conclusions}
+
 \end{multicols}
 
 \end{document}
